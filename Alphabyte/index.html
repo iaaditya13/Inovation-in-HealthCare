@@ -1,0 +1,41 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medical History Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Inter:wght@200;300;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="profile">
+      <img src="profile2.jpg" alt="Profile Picture" class="profile-picture">
+      <h2 class="profile-name">Jacob Lucer</h2>
+      <p class="profile-info">Age: 26</p>
+      <p class="profile-info">Gender: Male</p>
+      <p class="profile-info">Phone: xxxxxxxx</p>
+    </div>
+    <div class="history">
+      <h1 class="history-title">Medical History:</h1>
+      <div id="reports">
+       
+      </div>
+      <form id="newReportForm" style="display: none;">
+        <input type="text" id="newReportKeyword" placeholder="Enter keyword..." required />
+  <input type="text" id="newReportDoctor" placeholder="Enter doctor's name..." required />
+  <textarea id="newReportText" placeholder="Enter your report details..." required></textarea>
+  <button type="submit">Submit Report</button>
+      </form>
+      <button id="addReportBtn">Add Report</button>
+      <div id="reportDetails" class="report-details">
+        
+        
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
